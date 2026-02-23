@@ -1,194 +1,95 @@
-/* You can either copy the below and paste it between style tags on your HTML page, OR you can copy this to a file and name it .css and link it from your HTML page. */
-
-/* tip: you can add a scrollbar to any note by adding this property to its css class: overflow:auto; */ 
-
-html, body {
-  margin:0;
-  padding:0;
-  font-family:sans-serif;
-}
-p {
-  padding:20px;
+/* Early internet / retro dominatrix aesthetic: black, greyscale, red accents */
+body {
+    font-family: Georgia, serif;
+    background-color: black;
+    color: #cccccc;
+    margin: 0;
+    padding: 0;
 }
 
-.content {
-  background-image:url('https://yesterweb.org/img/bb/cork.png');
-  margin:0 !important;
-  height:auto;
-  padding:20px !important;
-  margin:0 auto;
+a {
+    color: red;
+    text-decoration: none;
 }
-.note-one {
-  width:220px;
-  height:350px;
-  margin-left:20px;
-  margin-top:20px;
-  position:relative;
-  background-color: #cbe0c3;
-  background-image:url('https://yesterweb.org/img/bb/paper-3.png');
-  overflow:auto;
+
+a:hover {
+    text-decoration: underline;
 }
-.note-one > p {
-  padding-top:30px;
+
+#header {
+    background-color: #222222;
+    padding: 10px;
+    text-align: center;
+    border-bottom: 2px solid #333333;
 }
-.note-one-fg {
-  background-color:#fff968;
-  width:150px;
-  height:150px;
-  margin-left:auto;
-  margin-right:auto;
-  left: 0;
-  right: 0;
-  transform:rotate(-5deg);
-  poisition:relative;
+
+#nav-top a {
+    margin: 0 15px;
+    font-size: 18px;
 }
-.note-one-fg::before {
-   	 content: "";
-	 position: absolute;
-	 bottom: -1.9em;
-	 right: 0;
-	 border-width: 2em 2em 0 0;
-	 border-style: solid;
-	 border-color: #ddd756 transparent;
+
+#container {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
 }
-.note-one-fg::after {
-	 content: "";
-	 position: absolute;
-	 bottom: -1.9em;
-	 left: 0;
-	 right: 1.9em;
-	 border-width: 1em;
-	 border-style: solid;
-	 border-color: #fff968;
+
+#left-nav {
+    width: 200px;
+    background-color: #111111;
+    padding: 15px;
+    border-right: 1px solid #333333;
 }
-.note-two {
-  background-color:#ffbcd9;
-  width:200px;
-  height:200px;
-  margin-top:20px;
-  position:relative;
-  transform:rotate(2deg);
+
+#left-nav a {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 16px;
 }
-.note-two::before {
-   content: "";
-	 position: absolute;
-	 bottom: -1.8em;
-	 right: 0;
-	 border-width: 2em 2em 0 0;
-	 border-style: solid;
-	 border-color: #d8a2ab transparent;
-  
+
+#center {
+    flex: 1;
+    padding: 20px;
 }
-.note-two::after {
-	 content: "";
-	 position: absolute;
-	 bottom: -1.8em;
-	 left: 0;
-	 right: 1.9em;
-	 border-width: 1em;
-	 border-style: solid;
-	 border-color: #ffbcd9;
+
+#center h1 {
+    color: #dddddd;
+    margin-top: 0;
 }
-.note-three {
-  background-image:url('https://yesterweb.org/img/bb/lined_paper.png');
-  width:300px;
-  height:500px;
-  transform:rotate(-2deg);
+
+#right-sidebar {
+    width: 250px;
+    background-color: #111111;
+    padding: 15px;
+    overflow-y: scroll;
+    height: 600px;          /* adjust this height to your liking */
+    border-left: 1px solid #333333;
 }
-.note-three-top{
-  background-color:#FAFAFA;
-  width:300px;
-  height:40px;
+
+.update {
+    border-bottom: 1px dashed #cccccc;
+    padding: 10px 0;
 }
-.note-four {
-  background-color:lightyellow;
-  width:200px;
-  height:300px;
+
+.date {
+    color: red;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
 }
-.note-five {
-  position:relative;
-  background-color:white;
-  width:500px;
-  height:700px;
-  background-image:url('https://sadgrl.online/images/bgs/tile/sandy.jpg');
+
+#tumblr-feed {
+    margin-top: 20px;
+    padding-top: 10px;
+    border-top: 1px solid #333333;
 }
-.note-five-fg {
-  background-color:#FFF968;
-  width:200px;
-  height:200px;
-  position:absolute;
-  top:0;
-  right:0;
-  transform:rotate(-4deg);
+
+#tumblr-feed h3 {
+    color: #dddddd;
+    margin-top: 0;
 }
-.row {
-  display:flex;
-  flex-wrap:wrap;
-  margin-bottom:20px;
-  justify-content:space-evenly;
-  align-items:center;
-}
-.row > div {
-  margin-right:30px;
-  margin-bottom:30px;
-}
-.paperclip {
-  max-width:60px;
-  position:absolute;
-  top:-30px;
-  left:50px;
-}
-.blue {
-  background-color:lightblue;
-  transform:rotate(-2deg);
-}
-.blue::before {
-   content: "";
-	 position: absolute;
-	 bottom: -1.9em;
-	 right: 0;
-	 border-width: 2em 2em 0 0;
-	 border-style: solid;
-	 border-color: #89b6c4 transparent;
-  
-}
-.blue::after {
-	 content: "";
-	 position: absolute;
-	 bottom: -1.9em;
-	 left: 0;
-	 right: 1.9em;
-	 border-width: 1em;
-	 border-style: solid;
-	 border-color: lightblue;
-}
-.tack {
-  width:30px;
-  margin:0 auto;
-  display:block;
-  margin-top:10px;
-}
-.larger {
-  width:70px;
-  margin-left:50px;
-  margin-top:0px;
-}
-.tape {
-  width:110px;
-  margin-top:-20px;
-  margin-left:-20px;
-  transform:rotate(5deg);
-}
-.intro {
-  width:500px;
-  height:100px;
-  text-align:center;
-  background-color:#6d457d;
-  background-image:url('https://yesterweb.org/img/bb/starring.png');
-  color:white;
-  transform:rotate(2deg);
-}
-.intro > p {
-  margin:20px;
-  padding:0;
+
+.tumblr-post {
+    margin-bottom: 15px;
+    font-size: 14px;
 }
