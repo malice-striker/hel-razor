@@ -152,36 +152,22 @@ marquee {
 }
 
 .entry-button {
-    width: auto;                    /* Stop forcing full/percent width — let natural size shine */
-    max-width: 600px;               /* Cap it so it doesn't get gigantic; adjust to your preferred max size, e.g. 500px or 700px */
-    height: auto;                   /* Preserve aspect ratio */
-    display: block;                 /* Centers it nicely and removes any inline spacing */
-    margin: 20px auto;              /* Centers horizontally with some breathing room */
-    border: 4px double red;
-    box-shadow: 0 0 15px rgba(255, 0, 0, 0.5);
-    transition: all 0.3s;
-    cursor: pointer;
-    image-rendering: pixelated;     /* Optional retro pixel feel if your image is low-res/GIF */
+    width: auto;
+    max-width: 600px;               /* Adjust this to control how large it appears — try 500px or 700px */
+    height: auto;
+    display: block;
+    margin: 30px auto;              /* Centers it with space above/below */
+    border: none !important;        /* Removes ALL border from the image */
+    box-shadow: none !important;    /* Removes any glow/shadow if you don't want it */
+    outline: none;                  /* No focus outline */
+    background: transparent;        /* Ensures no background fill */
+    image-rendering: pixelated;     /* Keeps retro crispness for GIF */
 }
 
-/* Fix the grey highlight/block on hover/focus */
-.entry-button,
-.entry-button:focus,
-a:focus .entry-button {
-    outline: none !important;       /* Removes default blue/grey focus outline */
-    border: 4px double red !important; /* Reinforce your border */
-}
-
-/* Keep your hover effect but prevent any unwanted background bleed */
-.entry-button:hover {
-    transform: scale(1.05);
-    box-shadow: 0 0 30px red;
-    border-color: #ff3333;
-    background: transparent;        /* Explicitly no background to avoid grey fill */
-}
-
-/* Also target the <a> wrapper to prevent any inherited highlights */
-#splash-container a {
+#splash-container a,
+#splash-container a:focus,
+#splash-container a:hover {
     outline: none;
+    border: none;
     background: transparent;
 }
