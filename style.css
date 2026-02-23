@@ -1,18 +1,25 @@
 /* Early internet / retro dominatrix aesthetic: black, greyscale, red accents */
+/* Consolidated & cleaned up — no duplicates, retro overrides applied */
+
 body {
     font-family: Georgia, serif;
     background-color: black;
+    background-repeat: repeat;          /* Important for tiled backgrounds */
+    background-attachment: fixed;       /* Old-school feel */
     color: #cccccc;
     margin: 0;
     padding: 0;
+    font-size: 14px;                    /* Cramped retro look */
 }
 
 a {
     color: red;
-    text-decoration: none;
+    text-decoration: underline;         /* Classic underlined links for retro */
 }
 
 a:hover {
+    color: #ff6666;                     /* Brighter red on hover */
+    background-color: #222;
     text-decoration: underline;
 }
 
@@ -21,6 +28,7 @@ a:hover {
     padding: 10px;
     text-align: center;
     border-bottom: 2px solid #333333;
+    border: 2px outset #444;            /* Beveled retro border */
 }
 
 #nav-top a {
@@ -39,12 +47,15 @@ a:hover {
     background-color: #111111;
     padding: 15px;
     border-right: 1px solid #333333;
+    border: 2px outset #444;            /* Beveled */
 }
 
 #left-nav a {
     display: block;
     margin-bottom: 10px;
     font-size: 16px;
+    color: #ff3333;
+    font-weight: bold;
 }
 
 #center {
@@ -62,12 +73,13 @@ a:hover {
     background-color: #111111;
     padding: 15px;
     overflow-y: scroll;
-    height: 600px;          /* adjust this height to your liking */
+    height: 600px;                      /* Adjust as needed */
     border-left: 1px solid #333333;
+    border: 2px outset #444;            /* Beveled */
 }
 
 .update {
-    border-bottom: 1px dashed #cccccc;
+    border-bottom: 2px dashed #666;     /* Chunkier dashed for retro */
     padding: 10px 0;
 }
 
@@ -94,26 +106,7 @@ a:hover {
     font-size: 14px;
 }
 
-
-/* Keep your existing styles, then add/override for retro */
-
-body {
-    /* existing */
-    background-repeat: repeat; /* important for tiling */
-    background-attachment: fixed; /* old-school feel */
-    font-size: 14px; /* slightly smaller for that cramped look */
-}
-
-a {
-    color: red;
-    text-decoration: underline; /* classic underlined links */
-}
-
-a:hover {
-    color: #ff6666; /* brighter red hover */
-    background-color: #222;
-}
-
+/* Retro animations */
 marquee {
     font-size: 16px;
     color: red;
@@ -124,35 +117,17 @@ marquee {
     animation: blink 1.5s infinite;
 }
 
-@keyframes blink {
-    0%, 100% { opacity: 1; }
-    50% { opacity: 0; }
-}
-
 .blink-red {
     color: red;
     animation: blink 1s infinite;
 }
 
-#header, #left-nav, #right-sidebar {
-    border: 2px outset #444; /* old 3D beveled look */
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
 }
 
-#left-nav a {
-    color: #ff3333;
-    font-weight: bold;
-}
-
-.update {
-    border-bottom: 2px dashed #666; /* chunkier dashed */
-}
-
-.date {
-    color: red;
-    font-weight: bold;
-}
-
-/* Optional: retro scrollbar (works in some browsers) */
+/* Retro scrollbar (Chrome/Safari/Edge) */
 ::-webkit-scrollbar {
     width: 12px;
 }
@@ -162,4 +137,54 @@ marquee {
 ::-webkit-scrollbar-thumb {
     background: #444;
     border: 2px solid #222;
+}
+
+/* Splash/entry page extras (from previous) */
+#splash-container {
+    text-align: center;
+    padding: 50px 20px;
+    max-width: 900px;
+    margin: 0 auto;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.entry-button {
+    width: 80%;
+    max-width: 700px;
+    border: 4px double red;
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.5);
+    transition: all 0.3s;
+    cursor: pointer;
+    image-rendering: pixelated;         /* For pixel-art feel if using GIFs */
+}
+
+.entry-button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 30px red;
+    border-color: #ff3333;
+}
+
+h1.blink {
+    color: #dddddd;
+    font-size: 4em;
+    margin: 20px 0;
+    text-shadow: 0 0 10px red;
+    animation: blink 1.2s infinite;
+}
+
+.warning {
+    color: red;
+    font-size: 1.8em;
+    font-weight: bold;
+    margin: 10px 0 30px;
+}
+
+/* Full-screen feel for splash */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
 }
