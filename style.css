@@ -1,145 +1,194 @@
-
 /* You can either copy the below and paste it between style tags on your HTML page, OR you can copy this to a file and name it .css and link it from your HTML page. */
 
-:root {
-  --accent-light: #fb90b6;
-  --accent-dark: #c9507a;
-  --accent-muted: #afafaf;
+/* tip: you can add a scrollbar to any note by adding this property to its css class: overflow:auto; */ 
+
+html, body {
+  margin:0;
+  padding:0;
+  font-family:sans-serif;
+}
+p {
+  padding:20px;
 }
 
-html,
-body {
-  margin: 0;
-  font-family: "Verdana";
-  font-size: 10px;
-  background-color: pink;
-  background-image: url("https://sadgrl.online/images/bgs/tile/heartpinkpas.gif");
-}
-strong {
-  color: var(--accent-dark);
-}
-em {
-  color: var(--accent-light);
-}
-u {
-  color: var(--accent-dark);
-}
-a {
-  color: var(--accent-dark);
-  font-weight: bold;
-  text-decoration: none;
-}
-
-.wrapper {
-  padding: 20px;
-}
-
-.container {
-  position: relative;
-  content: "";
-  background-image: url("https://sadgrl.online/images/lyts/not-mine/notebook-collage.png");
-  background-repeat: no-repeat;
-  height: 100%;
-  max-width: 900px;
-  height: 770px;
-  margin: 0 auto;
-}
-.post-it,
-.white-box,
-.notebook,
-.yellow-note {
-  position: absolute;
-}
-.post-it {
-  top: 20px;
-  left: 40px;
-  width: 130px;
-}
-.white-box {
-  top: 20px;
-  left: 180px;
-  width: 500px;
-  height: 100px;
-  overflow: hidden;
-}
-.notebook {
-  top: 172px;
-  left: 145px;
-}
-.notebook > .wrapper {
-  overflow: auto;
-  height: 450px;
-  width: 380px;
-  padding-right: 84px;
-  scrollbar-width: thin; /* "auto" or "thin" */
-  scrollbar-color: #000 #c4c4c4; /* scroll thumb and track */
-}
-.notebook > .wrapper p {
-  line-height: 16.2px;
-  margin-bottom: 16.5px;
-}
-.yellow-note {
-  left: 640px;
-  top: 160px;
-  width: 180px;
-  height: 550px;
-  overflow: auto;
-  scrollbar-width: thin; /* "auto" or "thin" */
-  scrollbar-color: #e8d866 #d6ca71; /* scroll thumb and track */
-}
-.title {
-  font-size: 35px;
-  font-weight: bold;
-  letter-spacing: 1px;
-  border-bottom: 3px dotted var(--accent-muted);
-  color: var(--accent-dark);
-}
 .content {
+  background-image:url('https://yesterweb.org/img/bb/cork.png');
+  margin:0 !important;
+  height:auto;
+  padding:20px !important;
+  margin:0 auto;
 }
-.subtitle {
-  font-size: 15px;
-  font-weight: bold;
-  letter-spacing: 1px;
-  border-bottom: 3px dotted var(--accent-muted);
-  margin-bottom: 10px;
-  color: var(--accent-dark);
+.note-one {
+  width:220px;
+  height:350px;
+  margin-left:20px;
+  margin-top:20px;
+  position:relative;
+  background-color: #cbe0c3;
+  background-image:url('https://yesterweb.org/img/bb/paper-3.png');
+  overflow:auto;
 }
-ul.pixelbullets {
-  list-style-image: url("https://sadgrl.online/images/lyts/not-mine/hearth_rosa.gif");
-  padding-left: 25px;
+.note-one > p {
+  padding-top:30px;
 }
-.page-title {
-  font-size: 25px;
-  padding-bottom: 4px;
-  color: var(--accent-dark);
-  font-weight: bold;
+.note-one-fg {
+  background-color:#fff968;
+  width:150px;
+  height:150px;
+  margin-left:auto;
+  margin-right:auto;
+  left: 0;
+  right: 0;
+  transform:rotate(-5deg);
+  poisition:relative;
 }
-.footer {
+.note-one-fg::before {
+   	 content: "";
+	 position: absolute;
+	 bottom: -1.9em;
+	 right: 0;
+	 border-width: 2em 2em 0 0;
+	 border-style: solid;
+	 border-color: #ddd756 transparent;
+}
+.note-one-fg::after {
+	 content: "";
+	 position: absolute;
+	 bottom: -1.9em;
+	 left: 0;
+	 right: 1.9em;
+	 border-width: 1em;
+	 border-style: solid;
+	 border-color: #fff968;
+}
+.note-two {
+  background-color:#ffbcd9;
+  width:200px;
+  height:200px;
+  margin-top:20px;
+  position:relative;
+  transform:rotate(2deg);
+}
+.note-two::before {
+   content: "";
+	 position: absolute;
+	 bottom: -1.8em;
+	 right: 0;
+	 border-width: 2em 2em 0 0;
+	 border-style: solid;
+	 border-color: #d8a2ab transparent;
+  
+}
+.note-two::after {
+	 content: "";
+	 position: absolute;
+	 bottom: -1.8em;
+	 left: 0;
+	 right: 1.9em;
+	 border-width: 1em;
+	 border-style: solid;
+	 border-color: #ffbcd9;
+}
+.note-three {
+  background-image:url('https://yesterweb.org/img/bb/lined_paper.png');
+  width:300px;
+  height:500px;
+  transform:rotate(-2deg);
+}
+.note-three-top{
+  background-color:#FAFAFA;
+  width:300px;
+  height:40px;
+}
+.note-four {
+  background-color:lightyellow;
+  width:200px;
+  height:300px;
+}
+.note-five {
+  position:relative;
+  background-color:white;
+  width:500px;
+  height:700px;
+  background-image:url('https://sadgrl.online/images/bgs/tile/sandy.jpg');
+}
+.note-five-fg {
+  background-color:#FFF968;
+  width:200px;
+  height:200px;
+  position:absolute;
+  top:0;
+  right:0;
+  transform:rotate(-4deg);
+}
+.row {
+  display:flex;
+  flex-wrap:wrap;
+  margin-bottom:20px;
+  justify-content:space-evenly;
+  align-items:center;
+}
+.row > div {
+  margin-right:30px;
+  margin-bottom:30px;
+}
+.paperclip {
+  max-width:60px;
+  position:absolute;
+  top:-30px;
+  left:50px;
+}
+.blue {
+  background-color:lightblue;
+  transform:rotate(-2deg);
+}
+.blue::before {
+   content: "";
+	 position: absolute;
+	 bottom: -1.9em;
+	 right: 0;
+	 border-width: 2em 2em 0 0;
+	 border-style: solid;
+	 border-color: #89b6c4 transparent;
+  
+}
+.blue::after {
+	 content: "";
+	 position: absolute;
+	 bottom: -1.9em;
+	 left: 0;
+	 right: 1.9em;
+	 border-width: 1em;
+	 border-style: solid;
+	 border-color: lightblue;
+}
+.tack {
+  width:30px;
+  margin:0 auto;
+  display:block;
+  margin-top:10px;
+}
+.larger {
+  width:70px;
+  margin-left:50px;
+  margin-top:0px;
+}
+.tape {
+  width:110px;
+  margin-top:-20px;
+  margin-left:-20px;
+  transform:rotate(5deg);
+}
+.intro {
+  width:500px;
+  height:100px;
   text-align:center;
+  background-color:#6d457d;
+  background-image:url('https://yesterweb.org/img/bb/starring.png');
+  color:white;
+  transform:rotate(2deg);
 }
-
-.yellow-note::-webkit-scrollbar {
-  width: 12px; /* width of the entire scrollbar */
-}
-
-.yellow-note::-webkit-scrollbar-track {
-  background: #e8d866; /* color of the tracking area */
-}
-
-.yellow-note::-webkit-scrollbar-thumb {
-  background-color: #d6ca71; /* color of the scroll thumb */
-}
-.notebook > .wrapper::-webkit-scrollbar {
-  width: 12px; /* width of the entire scrollbar */
-}
-
-.notebook > .wrapper::-webkit-scrollbar-track {
-  background: #c4c4c4;; /* color of the tracking area */
-}
-
-.notebook > .wrapper::-webkit-scrollbar-thumb {
-  background-color:  #000; /* color of the scroll thumb */
-}
-.removeThis {
-  background-color:yellow;
+.intro > p {
+  margin:20px;
+  padding:0;
 }
