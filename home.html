@@ -4,90 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dominatrix Home</title>
-    <style>
-        /* Early internet vibe: simple, blocky, fixed widths, basic colors */
-        body {
-            font-family: Georgia, serif;
-            background-color: black;
-            color: #cccccc; /* Greyscale text */
-            margin: 0;
-            padding: 0;
-        }
-        a {
-            color: red; /* Red accents for links */
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-        #header {
-            background-color: #222222; /* Dark grey */
-            padding: 10px;
-            text-align: center;
-            border-bottom: 2px solid #333333;
-        }
-        #nav-top a {
-            margin: 0 15px;
-            font-size: 18px;
-        }
-        #container {
-            display: flex;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-        #left-nav {
-            width: 200px;
-            background-color: #111111;
-            padding: 15px;
-            border-right: 1px solid #333333;
-        }
-        #left-nav a {
-            display: block;
-            margin-bottom: 10px;
-            font-size: 16px;
-        }
-        #center {
-            flex: 1;
-            padding: 20px;
-        }
-        #right-sidebar {
-            width: 250px;
-            background-color: #111111;
-            padding: 15px;
-            overflow-y: scroll; /* Scrollbar for updates */
-            height: 600px; /* Fixed height to enable scrolling; adjust as needed */
-            border-left: 1px solid #333333;
-        }
-        .update {
-            border-bottom: 1px dashed #cccccc; /* Dashed separator */
-            padding: 10px 0;
-        }
-        .date {
-            color: red; /* Red accent for dates */
-            font-weight: bold;
-            display: block;
-            margin-bottom: 5px;
-        }
-        #tumblr-feed {
-            margin-top: 20px;
-            padding-top: 10px;
-            border-top: 1px solid #333333;
-        }
-        /* Placeholder styles for Tumblr feed */
-        .tumblr-post {
-            margin-bottom: 15px;
-            font-size: 14px;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div id="header">
         <div id="nav-top">
-            <a href="home.html">Home</a>
+            <a href="index.html">Home</a>
             <a href="gallery.html">Gallery</a>
             <a href="links.html">Links</a>
             <a href="contact.html">Contact</a>
-            <a href="https://cash.app/yourusername" target="_blank">CashApp</a> <!-- Replace with your actual links -->
+            <a href="https://cash.app/yourusername" target="_blank">CashApp</a>
             <a href="https://paypal.me/yourusername" target="_blank">PayPal</a>
             <a href="https://venmo.com/yourusername" target="_blank">Venmo</a>
         </div>
@@ -95,57 +21,44 @@
 
     <div id="container">
         <div id="left-nav">
-            <!-- Sidebar nav: vertical version of top nav for easy access -->
-            <a href="home.html">Home</a>
+            <a href="index.html">Home</a>
             <a href="gallery.html">Gallery</a>
             <a href="links.html">Links</a>
             <a href="contact.html">Contact</a>
-            <!-- You can add more sidebar-specific links here if needed -->
+            <!-- Add more sidebar links here if desired -->
         </div>
 
         <div id="center">
-            <!-- Center module: main content area -->
-            <h1 style="color: #dddddd;">Welcome to My Domain</h1>
-            <p>This is the central content area. Add your introduction, services description, or whatever fits here. Keep it simple and evocative.</p>
-            <p>Feel free to customize this section with text, images, or other elements.</p>
+            <h1>Welcome to My Domain</h1>
+            <p>This is the central content area. Add your introduction, services description, rules, or whatever you want here.</p>
+            <p>Feel free to customize this section with text, images (use &lt;img src="your-image.jpg"&gt;), or other elements.</p>
         </div>
 
         <div id="right-sidebar">
-            <!-- Updates section with scrollbar -->
             <div class="update">
                 <span class="date">February 23, 2026</span>
-                <p>Update entry: Latest session highlights or announcements go here.</p>
+                <p>Latest session availability posted. Booking now open for March.</p>
             </div>
             <div class="update">
                 <span class="date">February 20, 2026</span>
-                <p>Another update: Perhaps a teaser for upcoming content.</p>
+                <p>New implement added to the collection — photos coming soon.</p>
             </div>
             <div class="update">
                 <span class="date">February 15, 2026</span>
-                <p>More updates can be added dynamically or statically.</p>
+                <p>Grateful for the loyal pets who served this week.</p>
             </div>
-            <!-- Add as many .update divs as needed -->
+            <!-- Add more .update divs as needed -->
 
-            <!-- Tumblr feed at the bottom -->
             <div id="tumblr-feed">
-                <h3 style="color: #dddddd;">Tumblr Updates</h3>
-                <!-- Placeholder for Tumblr feed: Use Tumblr's embed script for real integration -->
-                <!-- Go to https://www.tumblr.com/widgets to generate a widget code for your blog's recent posts -->
-                <!-- Example placeholder posts (replace with actual embed) -->
+                <h3>Tumblr Updates</h3>
+                <!-- Replace the placeholders below with your actual Tumblr widget/embed code -->
+                <!-- Get it from: https://www.tumblr.com/settings/blog/YOURBLOG/widget/recent_posts -->
                 <div class="tumblr-post">
-                    <p>Tumblr post text: "Quick update from my blog..."</p>
+                    <p>[Tumblr post placeholder — embed your real feed here]</p>
                 </div>
                 <div class="tumblr-post">
-                    <p>Another Tumblr post: "Thoughts on the scene."</p>
+                    <p>Another post will appear here once embedded</p>
                 </div>
-                <!-- Embed script example (uncomment and customize): -->
-                <!--
-                <script src="https://assets.tumblr.com/post.js"></script>
-                <div id="tumblr-widget-container"></div>
-                <script>
-                    // Replace with your Tumblr widget code here
-                </script>
-                -->
             </div>
         </div>
     </div>
