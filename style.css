@@ -152,39 +152,36 @@ marquee {
 }
 
 .entry-button {
-    width: 80%;
-    max-width: 700px;
+    width: auto;                    /* Stop forcing full/percent width — let natural size shine */
+    max-width: 600px;               /* Cap it so it doesn't get gigantic; adjust to your preferred max size, e.g. 500px or 700px */
+    height: auto;                   /* Preserve aspect ratio */
+    display: block;                 /* Centers it nicely and removes any inline spacing */
+    margin: 20px auto;              /* Centers horizontally with some breathing room */
     border: 4px double red;
     box-shadow: 0 0 15px rgba(255, 0, 0, 0.5);
     transition: all 0.3s;
     cursor: pointer;
-    image-rendering: pixelated;         /* For pixel-art feel if using GIFs */
+    image-rendering: pixelated;     /* Optional retro pixel feel if your image is low-res/GIF */
 }
 
+/* Fix the grey highlight/block on hover/focus */
+.entry-button,
+.entry-button:focus,
+a:focus .entry-button {
+    outline: none !important;       /* Removes default blue/grey focus outline */
+    border: 4px double red !important; /* Reinforce your border */
+}
+
+/* Keep your hover effect but prevent any unwanted background bleed */
 .entry-button:hover {
     transform: scale(1.05);
     box-shadow: 0 0 30px red;
     border-color: #ff3333;
+    background: transparent;        /* Explicitly no background to avoid grey fill */
 }
 
-h1.blink {
-    color: #dddddd;
-    font-size: 4em;
-    margin: 20px 0;
-    text-shadow: 0 0 10px red;
-    animation: blink 1.2s infinite;
-}
-
-.warning {
-    color: red;
-    font-size: 1.8em;
-    font-weight: bold;
-    margin: 10px 0 30px;
-}
-
-/* Full-screen feel for splash */
-html, body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
+/* Also target the <a> wrapper to prevent any inherited highlights */
+#splash-container a {
+    outline: none;
+    background: transparent;
 }
