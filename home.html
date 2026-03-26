@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your Website</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css?v=1">
 </head>
 <body>
 
-    <!-- Top Header with Background Image -->
+    <!-- Top Header -->
     <header class="header">
         <div class="header-overlay">
             <nav class="top-nav">
@@ -23,7 +23,7 @@
 
     <div class="main-container">
 
-        <!-- Floating Left Navigation -->
+        <!-- Left Sidebar -->
         <aside class="left-sidebar">
             <h3>Navigation</h3>
             <ul class="sidebar-links">
@@ -33,7 +33,6 @@
                 <li><a href="#">Chronicle</a></li>
             </ul>
 
-            <!-- Dropdown 1 -->
             <div class="dropdown">
                 <button class="dropbtn">Section I ▼</button>
                 <div class="dropdown-content">
@@ -43,7 +42,6 @@
                 </div>
             </div>
 
-            <!-- Dropdown 2 -->
             <div class="dropdown">
                 <button class="dropbtn">Section II ▼</button>
                 <div class="dropdown-content">
@@ -53,7 +51,6 @@
                 </div>
             </div>
 
-            <!-- Dropdown 3 -->
             <div class="dropdown">
                 <button class="dropbtn">Section III ▼</button>
                 <div class="dropdown-content">
@@ -64,10 +61,10 @@
             </div>
         </aside>
 
-        <!-- Center Content -->
+        <!-- Center -->
         <main class="center-content">
             <div class="hero-module">
-                <h1 id="page-title">Welcome to the Void</h1>
+                <h1>Welcome to the Void</h1>
                 <img id="center-image" src="https://via.placeholder.com/800x450/1a1a1a/ffffff?text=IMAGE+HERE" alt="Main Image">
                 <p id="purpose-text">
                     A digital sanctuary for forgotten thoughts and shadowed memories. 
@@ -76,7 +73,7 @@
             </div>
         </main>
 
-        <!-- Right Sidebar - Updates -->
+        <!-- Right Sidebar -->
         <aside class="right-sidebar">
             <h3>Recent Transmissions</h3>
             <div class="updates-container">
@@ -99,9 +96,9 @@
     </div>
 
     <script>
-        document.querySelectorAll('.dropbtn').forEach(button => {
-            button.addEventListener('click', () => {
-                const content = button.nextElementSibling;
+        document.querySelectorAll('.dropbtn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                const content = btn.nextElementSibling;
                 content.style.display = content.style.display === 'block' ? 'none' : 'block';
             });
         });
