@@ -5,11 +5,11 @@
 }
 
 body {
-    font-family: 'Courier New', Courier, monospace;
+    font-family: Georgia, serif;
     background-color: #0a0a0a;
     color: #ddd;
-    line-height: 1.6;
-    background-image: 
+    line-height: 1.7;
+    background-image:
         linear-gradient(rgba(255,0,0,0.03) 1px, transparent 1px),
         linear-gradient(90deg, rgba(255,0,0,0.03) 1px, transparent 1px);
     background-size: 40px 40px;
@@ -31,7 +31,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.75);
+    background: rgba(0, 0, 0, 0.78);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -45,7 +45,7 @@ body {
 .top-nav a {
     color: #fff;
     text-decoration: none;
-    font-size: 1.15rem;
+    font-size: 1.2rem;
     font-weight: bold;
     letter-spacing: 2px;
     text-transform: uppercase;
@@ -81,7 +81,7 @@ body {
 .left-sidebar h3 {
     color: #fff;
     margin-bottom: 20px;
-    font-size: 1.4rem;
+    font-size: 1.45rem;
     border-bottom: 2px solid #c00;
     padding-bottom: 8px;
     text-transform: uppercase;
@@ -100,7 +100,7 @@ body {
 .sidebar-links a {
     color: #ccc;
     text-decoration: none;
-    font-size: 1.05rem;
+    font-size: 1.08rem;
 }
 
 .sidebar-links a:hover {
@@ -118,8 +118,8 @@ body {
     background: #1a1a1a;
     border: 2px solid #444;
     color: #ddd;
-    font-family: inherit;
-    font-size: 1.05rem;
+    font-family: Georgia, serif;
+    font-size: 1.08rem;
     text-align: left;
     cursor: pointer;
     text-transform: uppercase;
@@ -138,6 +138,7 @@ body {
     padding: 12px 16px;
     color: #bbb;
     text-decoration: none;
+    font-family: Georgia, serif;
 }
 
 .dropdown-content a:hover {
@@ -162,8 +163,8 @@ body {
     font-size: 3.2rem;
     color: #fff;
     margin-bottom: 30px;
-    text-shadow: 0 0 10px #c00;
-    letter-spacing: 3px;
+    text-shadow: 0 0 12px #c00;
+    letter-spacing: 2px;
     text-transform: uppercase;
 }
 
@@ -173,11 +174,11 @@ body {
     object-fit: cover;
     border: 3px solid #555;
     margin-bottom: 30px;
-    filter: contrast(1.1);
+    filter: contrast(1.15);
 }
 
 #purpose-text {
-    font-size: 1.2rem;
+    font-size: 1.22rem;
     color: #aaa;
     max-width: 820px;
     margin: 0 auto;
@@ -234,7 +235,7 @@ body {
 
 .update-item p {
     color: #bbb;
-    font-size: 1.02rem;
+    font-size: 1.05rem;
 }
 
 hr {
@@ -243,7 +244,7 @@ hr {
     margin: 20px 0;
 }
 
-/* Hover effects with red glow */
+/* Hover effects */
 a:hover, .dropbtn:hover {
     text-shadow: 0 0 8px #ff3333;
 }
@@ -256,37 +257,4 @@ a:hover, .dropbtn:hover {
     .left-sidebar, .right-sidebar {
         width: 100%;
     }
-}
-
-/* Splash/entry page extras (from previous) */
-#splash-container {
-    text-align: center;
-    padding: 50px 20px;
-    max-width: 900px;
-    margin: 0 auto;
-    min-height: 80vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.entry-button {
-    width: auto;
-    max-width: 600px;               /* Adjust this to control how large it appears — try 500px or 700px */
-    height: auto;
-    display: block;
-    margin: 30px auto;              /* Centers it with space above/below */
-    border: none !important;        /* Removes ALL border from the image */
-    box-shadow: none !important;    /* Removes any glow/shadow if you don't want it */
-    outline: none;                  /* No focus outline */
-    background: transparent;        /* Ensures no background fill */
-    image-rendering: pixelated;     /* Keeps retro crispness for GIF */
-}
-
-#splash-container a,
-#splash-container a:focus,
-#splash-container a:hover {
-    outline: none;
-    border: none;
-    background: transparent;
 }
