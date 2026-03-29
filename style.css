@@ -8,11 +8,17 @@ body {
     background-color: #000000;
     color: #ffffff;
     font-family: Georgia, serif;
-    line-height: 1.6;
+    line-height: 1.7;
+}
+
+/* Make ALL links white by default */
+a {
+    color: #ffffff;
+    text-decoration: none;
 }
 
 a:hover {
-    color: #ccc;
+    color: #dddddd;
     text-decoration: underline;
 }
 
@@ -21,15 +27,14 @@ a:hover {
     width: 100%;
     height: 300px;
     object-fit: cover;
-    display: block;
 }
 
 /* Navigation */
 .main-nav {
-    background-color: #111;
-    padding: 15px 0;
+    background-color: #111111;
+    padding: 16px 0;
     text-align: center;
-    border-bottom: 1px solid #333;
+    border-bottom: 1px solid #333333;
 }
 
 .main-nav ul {
@@ -40,7 +45,12 @@ a:hover {
     flex-wrap: wrap;
 }
 
-/* Container */
+.main-nav a {
+    font-size: 1.1rem;
+    padding: 8px 15px;
+}
+
+/* Main Container */
 .container {
     max-width: 1400px;
     margin: 40px auto;
@@ -50,24 +60,24 @@ a:hover {
     flex-wrap: wrap;
 }
 
-/* Modules */
+/* All Modules */
 .module {
-    background-color: rgba(25, 25, 25, 0.92);
-    border: 1px solid #444;
-    padding: 25px;
-    border-radius: 8px;
-    backdrop-filter: blur(8px);
+    background-color: rgba(30, 30, 30, 0.95);
+    border: 1px solid #444444;
+    padding: 28px;
+    border-radius: 10px;
 }
 
-/* Left */
+/* Left Module */
 .left-module {
     flex: 1;
     min-width: 240px;
     max-width: 280px;
 }
 
-.left-module h2, .left-module h3 {
-    margin-bottom: 12px;
+.left-module h2,
+.left-module h3 {
+    margin-bottom: 15px;
     padding-bottom: 8px;
     border-bottom: 1px solid #555;
 }
@@ -78,56 +88,60 @@ a:hover {
 }
 
 .link-list li {
-    margin: 10px 0;
+    margin: 12px 0;
 }
 
 select {
     width: 100%;
     padding: 10px;
-    background: #1a1a1a;
-    color: white;
+    background-color: #1a1a1a;
+    color: #ffffff;
     border: 1px solid #666;
     margin-bottom: 20px;
     font-family: Georgia, serif;
 }
 
-/* Middle */
+/* Middle Module */
 .middle-module {
     flex: 2;
     min-width: 300px;
 }
 
 .module-title {
-    font-size: 2.3rem;
+    font-size: 2.4rem;
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
 }
 
 .featured-image {
     width: 100%;
-    border-radius: 6px;
-    margin: 20px 0;
+    border-radius: 8px;
+    margin: 25px 0;
     border: 1px solid #555;
 }
 
 .payment-options {
-    margin-top: 35px;
+    margin-top: 40px;
     text-align: center;
     padding-top: 20px;
     border-top: 1px solid #444;
 }
 
+.payment-options p {
+    margin-bottom: 15px;
+}
+
 .payment-options a {
-    margin: 0 8px;
+    margin: 0 10px;
     display: inline-block;
 }
 
 .payment-options img:hover {
-    transform: scale(1.1);
-    transition: 0.2s;
+    transform: scale(1.08);
+    transition: transform 0.2s;
 }
 
-/* Right */
+/* Right Module */
 .right-module {
     flex: 1;
     min-width: 240px;
@@ -137,10 +151,11 @@ select {
 .updates-feed {
     max-height: 520px;
     overflow-y: auto;
+    padding-right: 8px;
 }
 
 .update {
-    padding: 14px 0;
+    padding: 15px 0;
     border-bottom: 1px solid #333;
 }
 
@@ -149,21 +164,22 @@ select {
 }
 
 .update small {
-    color: #888;
-    font-size: 0.85rem;
+    color: #aaaaaa;
+    display: block;
+    margin-bottom: 5px;
 }
 
 /* Footer */
 footer {
     text-align: center;
-    padding: 40px 20px 20px;
-    color: #666;
+    padding: 40px 20px;
+    color: #777;
     border-top: 1px solid #222;
     margin-top: 60px;
 }
 
 /* Responsive */
-@media (max-width: 900px) {
+@media (max-width: 920px) {
     .container {
         flex-direction: column;
     }
