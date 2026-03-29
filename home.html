@@ -4,104 +4,109 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your Website</title>
-    <link rel="stylesheet" href="styles.css?v=1">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-    <!-- Top Header -->
-    <header class="header">
-        <div class="header-overlay">
-            <nav class="top-nav">
-                <a href="#">Home</a>
-                <a href="#">Archive</a>
-                <a href="#">Entries</a>
-                <a href="#">Gallery</a>
-                <a href="#">Contact</a>
-            </nav>
-        </div>
+    <!-- Top Header Image -->
+    <header class="top-header">
+        <img src="https://via.placeholder.com/1200x300/000000/FFFFFF?text=HEADER+IMAGE" alt="Header Image">
     </header>
 
-    <div class="main-container">
+    <!-- Navigation Menu -->
+    <nav class="main-nav">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Shop</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
 
-        <!-- Left Sidebar -->
-        <aside class="left-sidebar">
-            <h3>Navigation</h3>
-            <ul class="sidebar-links">
-                <li><a href="#">Main Page</a></li>
-                <li><a href="#">Manifesto</a></li>
-                <li><a href="#">Library</a></li>
-                <li><a href="#">Chronicle</a></li>
+    <div class="container">
+        <!-- Left Module -->
+        <aside class="module left-module">
+            <h2>Navigation</h2>
+            <ul class="link-list">
+                <li><a href="#">Link 1</a></li>
+                <li><a href="#">Link 2</a></li>
+                <li><a href="#">Link 3</a></li>
+                <li><a href="#">Link 4</a></li>
             </ul>
 
-            <div class="dropdown">
-                <button class="dropbtn">Section I ▼</button>
-                <div class="dropdown-content">
-                    <a href="#">Subpage 1.1</a>
-                    <a href="#">Subpage 1.2</a>
-                    <a href="#">Subpage 1.3</a>
-                </div>
-            </div>
+            <h3>Dropdown 1</h3>
+            <select onchange="if(this.value) window.location.href=this.value">
+                <option value="">-- Select --</option>
+                <option value="https://example.com/page1">Option 1</option>
+                <option value="https://example.com/page2">Option 2</option>
+                <option value="https://example.com/page3">Option 3</option>
+            </select>
 
-            <div class="dropdown">
-                <button class="dropbtn">Section II ▼</button>
-                <div class="dropdown-content">
-                    <a href="#">Subpage 2.1</a>
-                    <a href="#">Subpage 2.2</a>
-                    <a href="#">Subpage 2.3</a>
-                </div>
-            </div>
+            <h3>Dropdown 2</h3>
+            <select onchange="if(this.value) window.location.href=this.value">
+                <option value="">-- Select --</option>
+                <option value="https://example.com/page4">Option A</option>
+                <option value="https://example.com/page5">Option B</option>
+            </select>
 
-            <div class="dropdown">
-                <button class="dropbtn">Section III ▼</button>
-                <div class="dropdown-content">
-                    <a href="#">Subpage 3.1</a>
-                    <a href="#">Subpage 3.2</a>
-                    <a href="#">Subpage 3.3</a>
-                </div>
-            </div>
+            <h3>Dropdown 3</h3>
+            <select onchange="if(this.value) window.location.href=this.value">
+                <option value="">-- Select --</option>
+                <option value="https://example.com/page6">Choice X</option>
+                <option value="https://example.com/page7">Choice Y</option>
+                <option value="https://example.com/page8">Choice Z</option>
+            </select>
         </aside>
 
-        <!-- Center -->
-        <main class="center-content">
-            <div class="hero-module">
-                <h1>Welcome to the Void</h1>
-                <img id="center-image" src="https://via.placeholder.com/800x450/1a1a1a/ffffff?text=IMAGE+HERE" alt="Main Image">
-                <p id="purpose-text">
-                    A digital sanctuary for forgotten thoughts and shadowed memories. 
-                    Enter if you dare.
-                </p>
+        <!-- Middle Module -->
+        <main class="module middle-module">
+            <h1 class="module-title">Main Content Title</h1>
+            
+            <img src="https://via.placeholder.com/600x400/1a1a1a/FFFFFF?text=Featured+Image" 
+                 alt="Featured Image" class="featured-image">
+            
+            <p>This is where your main text content goes. You can write as much as you want here. The background is semi-transparent black so it stands out nicely on the dark page.</p>
+            
+            <p>Feel free to add more paragraphs, lists, or anything else you need.</p>
+
+            <!-- Payment Options -->
+            <div class="payment-options">
+                <p>Accepted Payments:</p>
+                <a href="https://paypal.com" target="_blank">
+                    <img src="https://via.placeholder.com/120x40/003087/FFFFFF?text=PAYPAL" alt="PayPal">
+                </a>
+                <a href="https://cash.app" target="_blank">
+                    <img src="https://via.placeholder.com/120x40/00C244/FFFFFF?text=CASH+APP" alt="Cash App">
+                </a>
+                <a href="https://venmo.com" target="_blank">
+                    <img src="https://via.placeholder.com/120x40/3D95CE/FFFFFF?text=VENMO" alt="Venmo">
+                </a>
             </div>
         </main>
 
-        <!-- Right Sidebar -->
-        <aside class="right-sidebar">
-            <h3>Recent Transmissions</h3>
-            <div class="updates-container">
-                <div class="update-item">
-                    <span class="update-date">26 March 2026</span>
-                    <p>The gates have opened once more. New echoes have been added to the archive.</p>
+        <!-- Right Module -->
+        <aside class="module right-module">
+            <h2>Latest Updates</h2>
+            <div class="updates-feed">
+                <div class="update">
+                    <small>Mar 29, 2026</small>
+                    <p>New product added to the shop!</p>
                 </div>
-                <hr>
-                <div class="update-item">
-                    <span class="update-date">20 March 2026</span>
-                    <p>Maintenance in the lower levels. Some paths may be temporarily inaccessible.</p>
+                <div class="update">
+                    <small>Mar 28, 2026</small>
+                    <p>Special discount this weekend only.</p>
                 </div>
-                <hr>
-                <div class="update-item">
-                    <span class="update-date">15 March 2026</span>
-                    <p>Version 0.8 deployed. The shadows grow deeper.</p>
+                <div class="update">
+                    <small>Mar 27, 2026</small>
+                    <p>Thank you for all the support last month.</p>
                 </div>
+                <!-- Add more updates here - it will scroll -->
             </div>
         </aside>
     </div>
 
-    <script>
-        document.querySelectorAll('.dropbtn').forEach(btn => {
-            btn.addEventListener('click', () => {
-                const content = btn.nextElementSibling;
-                content.style.display = content.style.display === 'block' ? 'none' : 'block';
-            });
-        });
-    </script>
+    <footer>
+        <p>&copy; 2026 Your Website. All rights reserved.</p>
+    </footer>
 </body>
 </html>
