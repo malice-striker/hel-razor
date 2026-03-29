@@ -1,4 +1,3 @@
-/* Basic Reset & Global Styles */
 * {
     margin: 0;
     padding: 0;
@@ -10,20 +9,14 @@ body {
     color: #ffffff;
     font-family: Georgia, serif;
     line-height: 1.6;
-    padding-bottom: 50px;
-}
-
-a {
-    color: #ffffff;
-    text-decoration: none;
 }
 
 a:hover {
+    color: #ccc;
     text-decoration: underline;
-    color: #cccccc;
 }
 
-/* Top Header */
+/* Header */
 .top-header img {
     width: 100%;
     height: 300px;
@@ -31,9 +24,9 @@ a:hover {
     display: block;
 }
 
-/* Main Navigation */
+/* Navigation */
 .main-nav {
-    background-color: #111111;
+    background-color: #111;
     padding: 15px 0;
     text-align: center;
     border-bottom: 1px solid #333;
@@ -47,12 +40,7 @@ a:hover {
     flex-wrap: wrap;
 }
 
-.main-nav a {
-    font-size: 1.1rem;
-    padding: 8px 16px;
-}
-
-/* Container for the 3 modules */
+/* Container */
 .container {
     max-width: 1400px;
     margin: 40px auto;
@@ -62,26 +50,26 @@ a:hover {
     flex-wrap: wrap;
 }
 
-/* All Modules */
+/* Modules */
 .module {
-    background-color: rgba(20, 20, 20, 0.85);
-    border: 1px solid #333;
+    background-color: rgba(25, 25, 25, 0.92);
+    border: 1px solid #444;
     padding: 25px;
     border-radius: 8px;
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(8px);
 }
 
-/* Left Module */
+/* Left */
 .left-module {
     flex: 1;
-    min-width: 220px;
+    min-width: 240px;
     max-width: 280px;
 }
 
 .left-module h2, .left-module h3 {
-    margin-bottom: 15px;
-    border-bottom: 1px solid #444;
+    margin-bottom: 12px;
     padding-bottom: 8px;
+    border-bottom: 1px solid #555;
 }
 
 .link-list {
@@ -90,85 +78,69 @@ a:hover {
 }
 
 .link-list li {
-    margin-bottom: 10px;
+    margin: 10px 0;
 }
 
 select {
     width: 100%;
     padding: 10px;
-    background-color: #1a1a1a;
+    background: #1a1a1a;
     color: white;
-    border: 1px solid #555;
+    border: 1px solid #666;
     margin-bottom: 20px;
     font-family: Georgia, serif;
 }
 
-/* Middle Module */
+/* Middle */
 .middle-module {
     flex: 2;
     min-width: 300px;
 }
 
 .module-title {
-    font-size: 2.2rem;
-    margin-bottom: 20px;
+    font-size: 2.3rem;
     text-align: center;
+    margin-bottom: 20px;
 }
 
 .featured-image {
     width: 100%;
-    height: auto;
     border-radius: 6px;
     margin: 20px 0;
-    border: 1px solid #444;
+    border: 1px solid #555;
 }
 
 .payment-options {
-    margin-top: 40px;
+    margin-top: 35px;
     text-align: center;
     padding-top: 20px;
     border-top: 1px solid #444;
 }
 
-.payment-options p {
-    margin-bottom: 15px;
-    font-style: italic;
-}
-
 .payment-options a {
-    margin: 0 10px;
+    margin: 0 8px;
     display: inline-block;
-    transition: transform 0.2s;
 }
 
-.payment-options a:hover {
-    transform: scale(1.08);
+.payment-options img:hover {
+    transform: scale(1.1);
+    transition: 0.2s;
 }
 
-/* Right Module */
+/* Right */
 .right-module {
     flex: 1;
-    min-width: 220px;
+    min-width: 240px;
     max-width: 280px;
 }
 
 .updates-feed {
     max-height: 520px;
     overflow-y: auto;
-    padding-right: 10px;
-}
-
-.updates-feed::-webkit-scrollbar {
-    width: 6px;
-}
-
-.updates-feed::-webkit-scrollbar-thumb {
-    background-color: #555;
-    border-radius: 10px;
 }
 
 .update {
-    padding: 12px 0;
+    padding: 14px 0;
     border-bottom: 1px solid #333;
 }
 
@@ -178,18 +150,16 @@ select {
 
 .update small {
     color: #888;
-    display: block;
-    margin-bottom: 4px;
+    font-size: 0.85rem;
 }
 
 /* Footer */
 footer {
     text-align: center;
-    padding: 30px 20px;
+    padding: 40px 20px 20px;
     color: #666;
-    font-size: 0.9rem;
     border-top: 1px solid #222;
-    margin-top: 50px;
+    margin-top: 60px;
 }
 
 /* Responsive */
@@ -197,8 +167,7 @@ footer {
     .container {
         flex-direction: column;
     }
-    
-    .left-module, .right-module, .middle-module {
+    .left-module, .right-module {
         min-width: 100%;
     }
 }
