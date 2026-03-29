@@ -2,90 +2,95 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Website</title>
+    <title>Your Site</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Top Header -->
-    <header class="top-header">
-        <img src="https://via.placeholder.com/1200x300/111111/FFFFFF?text=YOUR+HEADER+IMAGE" alt="Header Image">
+
+    <!-- HEADER -->
+    <header>
+        <img src="header.jpg" alt="Header Image" class="header-img">
+
+        <nav class="top-nav">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Gallery</a>
+            <a href="#">Contact</a>
+        </nav>
     </header>
 
-    <!-- Navigation -->
-    <nav class="main-nav">
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Shop</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-    </nav>
-
+    <!-- MAIN CONTENT -->
     <div class="container">
-        <!-- Left Module -->
-        <aside class="module left-module">
-            <h2>Navigation</h2>
+
+        <!-- LEFT MODULE -->
+        <aside class="module left">
+
+            <h3>Links</h3>
             <ul class="link-list">
-                <li><a href="#">Link 1</a></li>
-                <li><a href="#">Link 2</a></li>
-                <li><a href="#">Link 3</a></li>
-                <li><a href="#">Link 4</a></li>
+                <li><a href="#">Link One</a></li>
+                <li><a href="#">Link Two</a></li>
+                <li><a href="#">Link Three</a></li>
             </ul>
 
-            <h3>Dropdown 1</h3>
-            <select onchange="if(this.value) window.location.href=this.value">
-                <option value="">-- Select --</option>
-                <option value="#">Option 1</option>
-                <option value="#">Option 2</option>
-            </select>
+            <h3>Dropdowns</h3>
 
-            <h3>Dropdown 2</h3>
-            <select onchange="if(this.value) window.location.href=this.value">
-                <option value="">-- Select --</option>
+            <select>
+                <option>Menu 1</option>
                 <option value="#">Option A</option>
                 <option value="#">Option B</option>
             </select>
 
-            <h3>Dropdown 3</h3>
-            <select onchange="if(this.value) window.location.href=this.value">
-                <option value="">-- Select --</option>
-                <option value="#">Choice X</option>
-                <option value="#">Choice Y</option>
+            <select>
+                <option>Menu 2</option>
+                <option value="#">Option A</option>
+                <option value="#">Option B</option>
             </select>
+
+            <select>
+                <option>Menu 3</option>
+                <option value="#">Option A</option>
+                <option value="#">Option B</option>
+            </select>
+
         </aside>
 
-        <!-- Middle Module -->
-        <main class="module middle-module">
-            <h1 class="module-title">Main Content Title</h1>
-            
-            <img src="https://via.placeholder.com/600x400/1a1a1a/FFFFFF?text=Featured+Image" 
-                 alt="Featured Image" class="featured-image">
-            
-            <p>This is your main text content area. Everything should now be clean white text on dark background.</p>
-            
-            <div class="payment-options">
-                <p>Accepted Payments:</p>
-                <a href="#" target="_blank"><img src="https://via.placeholder.com/120x40/003087/FFFFFF?text=PAYPAL" alt="PayPal"></a>
-                <a href="#" target="_blank"><img src="https://via.placeholder.com/120x40/00C244/FFFFFF?text=CASH+APP" alt="Cash App"></a>
-                <a href="#" target="_blank"><img src="https://via.placeholder.com/120x40/3D95CE/FFFFFF?text=VENMO" alt="Venmo"></a>
+        <!-- CENTER MODULE -->
+        <main class="module center">
+
+            <h1>Title Goes Here</h1>
+
+            <img src="main-image.jpg" alt="Main Image" class="main-img">
+
+            <p>
+                This is where your text goes. You can write anything here — updates,
+                descriptions, or whatever content you want on your homepage.
+            </p>
+
+            <!-- PAYMENT ICON LINKS -->
+            <div class="payments">
+                <a href="#"><img src="paypal.png" alt="PayPal"></a>
+                <a href="#"><img src="cashapp.png" alt="CashApp"></a>
+                <a href="#"><img src="venmo.png" alt="Venmo"></a>
             </div>
+
         </main>
 
-        <!-- Right Module -->
-        <aside class="module right-module">
-            <h2>Latest Updates</h2>
-            <div class="updates-feed">
-                <div class="update"><small>Mar 29, 2026</small><p>New item added to shop!</p></div>
-                <div class="update"><small>Mar 28, 2026</small><p>Weekend discount active.</p></div>
-                <div class="update"><small>Mar 27, 2026</small><p>Thank you for your support ❤️</p></div>
+        <!-- RIGHT MODULE -->
+        <aside class="module right">
+
+            <h3>Updates</h3>
+
+            <div class="updates-box">
+                <p>Update 1: Something happened.</p>
+                <p>Update 2: Another thing happened.</p>
+                <p>Update 3: Keep adding more and it will scroll.</p>
+                <p>Update 4: Endless scrolling vibes.</p>
+                <p>Update 5: Add as many as you want.</p>
             </div>
+
         </aside>
+
     </div>
 
-    <footer>
-        <p>&copy; 2026 Your Website • All rights reserved</p>
-    </footer>
 </body>
 </html>
