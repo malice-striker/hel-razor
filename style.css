@@ -205,3 +205,96 @@ select {
         gap: 12px;
     }
 }
+/* ====================== AO3-STYLE META BOX ====================== */
+.fic-meta {
+    background: #111;
+    border: 2px solid #444;
+    border-radius: 6px;
+    padding: 20px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+}
+
+.fic-title {
+    margin: 0 0 15px 0;
+    font-size: 1.8rem;
+    color: #fff;
+    text-align: center;
+    border-bottom: 1px solid #555;
+    padding-bottom: 12px;
+}
+
+.meta-info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px 30px;
+    margin-bottom: 18px;
+    font-size: 1.05rem;
+}
+
+.meta-info div {
+    color: #ddd;
+}
+
+.meta-value {
+    color: #fff;
+    font-weight: normal;
+}
+
+.tags {
+    margin: 18px 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.tag {
+    background: #222;
+    color: #ccc;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    border: 1px solid #555;
+}
+
+.stats {
+    display: flex;
+    gap: 25px;
+    font-size: 1.05rem;
+    margin: 18px 0;
+    padding: 10px 0;
+    border-top: 1px dashed #555;
+    border-bottom: 1px dashed #555;
+}
+
+.stats span {
+    color: #bbb;
+}
+
+.chapter-nav {
+    margin-top: 15px;
+}
+
+.chapter-nav label {
+    display: inline-block;
+    margin-right: 10px;
+    color: #ccc;
+}
+
+.chapter-nav select {
+    background: #1a1a1a;
+    color: #fff;
+    border: 1px solid #555;
+    padding: 6px 10px;
+    font-size: 1rem;
+    border-radius: 4px;
+    width: 100%;
+    max-width: 420px;
+}
+
+/* Hover effect on tags */
+.tag:hover {
+    background: #8B0000;
+    color: white;
+    border-color: #c00;
+}
